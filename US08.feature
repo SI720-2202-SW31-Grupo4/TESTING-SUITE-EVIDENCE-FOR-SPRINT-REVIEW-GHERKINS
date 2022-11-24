@@ -1,32 +1,21 @@
 Feature: US08 - Obtener información del pedido
-Scenario: S01 - Confirmar el pedido
+Scenario: S01 - Ver la descripción de los componenetes del computador
  
-Given que el proveedor tiene la información del pedido
-And necesite guardar una configuración para probar otra
-When visualice la información del pedido
-And se verifique que el producto solicitado está disponible
-Then el proveedor confirma y notifica el pedido al cliente
+Given que el usuario desea revisar y conocer más sobre los componentes recomendados
+When haga presione en la pieza que desea revisar
+Then se mostrará un formato en el cual se podrá visualizar diversas imágenes de la pieza, 
+así como también una descripción detallada de la misma.
+
+Example:
  
-Scenario: S02 - Cancelar el pedido
-Given que el proveedor tiene la información del pedido
-When visualice la información del pedido
-And se verifique que el producto solicitado no está disponible
-Then el proveedor cancela y notifica el pedido al cliente
- 
-Examples: Confirmación y cancelación del pedido
- 
- 
- 
-|Pedido confirmado        |
-|Producto                 |Detalle                  |Disponible
-|Processor                |Intel® Core™ i5          |Si
-|Motherboard              |Estándar-ATX             |Si
-|RAM                      |8GB - DDR4 / DDR5        |Si
-|GraphicsCard             |AMD Radeon RX 580        |Si
- 
-|Pedido cancelado         |Detalle                  |Disponible
-|Processor                |Intel® Core™ i9          |No
-|Motherboard              |Micro-ATX                |Si
-|RAM                      |16GB - PCIe Gen 5        |Si
-|Storage                  |1 TB                     |Si
-|GraphicsCard             |gráficos UHD Intel® 770  |No                
+|Producto                 |Detalle                        |
+|Processor                |Intel® Core™ i5                |
+
+|Descripción                                              |
+
+| Arquitectura híbrida de rendimiento avanzado            | 
+|Los procesadores Intel Core de 13ª generación avanzan 
+en la arquitectura híbrida de rendimiento 1  con hasta 
+ocho núcleos de rendimiento (P-core) y hasta 16 núcleos 
+eficientes (E-core), combinados con cargas de trabajo 
+enrutadas de forma inteligente por Intel® Thread Director 2.|

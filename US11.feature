@@ -1,16 +1,17 @@
-Feature: US11 - Usar el asistente virtual
-Scenario: S01 - El cliente utiliza el asistente virtual
+
+Feature: US11 - Pagar el pedido
+Scenario: S01 - Se valida el pago del pedido
  
-Given que el usuario está registrado
-When abre la aplicación y selecciona la burbuja emergente del asistente virtual
-Then el sistema muestra un chat con el asistente, donde realiza preguntas, recomienda y da instrucciones relacionadas a los componentes y su ensamblado
+Given que se verifica que el usuario pertenece a nuestro registro del sistema
+And el cliente presiona [Pagar pedido]
+When el cliente llene los campos como:[número de tarjeta],[CVV],[Fecha de vencimiento de la tarjeta],[Nombres del titular] y [Apellidos del Titular]
+And el sistema verifica que todos los campos estén completados correctamente
+Then se muestra el mensaje de “<Compra exitosa>”
  
-Example: Uso del asistente virtual
+Example: Pago del pedido
  
-|Asistente virtual                    |                                      |
-|Opciones                             |                                      |
-|Buscar componente                    |Motherboard  Estándar-ATX             |                 
-|Conversar con el ChatBot             |Realizar Preguntas                    |
-|Recomendaciones del ChatBot          |Código                                |325346534    |
-                                      |Precio                                |$153         |      
-                                      |Marca de producto                     |ASUS         |
+|Número de la tarjeta |1412 1002 2345 3454
+|CVV                  |345
+|Fecha de vencimiento |08/2024
+|Nombres del titular  |Myriam Soledad
+|Apellidos del titular|Lopes Perez

@@ -14,7 +14,6 @@ Examples: Lista de las configuraciones de dos computadores
 |RAM                      |8GB - DDR4 / DDR5
 |Storage                  |1 TB
 |GraphicsCard             |AMD Radeon RX 580
-
 |Lista de Configuracion 02|Detalle
 |Processor                |Intel® Core™ i9, para un desempeño de gaming de nivel superior
 |Motherboard              |Micro-ATX

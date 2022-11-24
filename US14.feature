@@ -1,5 +1,5 @@
-Feature: US14 - Pagar el pedido
-Scenario: S01 - Se valida el pago del pedido
+Feature: US14 - Pagar la suscripción frl proveedor
+Scenario: S01 - El proveedor realiza el pago de suscripción
  
 Given que se verifica que el usuario pertenece a nuestro registro del sistema
 And el cliente presiona [Pagar pedido]
